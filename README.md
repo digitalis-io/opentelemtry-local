@@ -78,6 +78,8 @@ make build-app
 make run-app
 ```
 
+![Grafana Tempo](./tempo.png)
+
 #### Python Application (runs in Docker):
 The Python application starts automatically when you run `make up-python`. No additional steps needed!
 

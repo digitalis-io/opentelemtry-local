@@ -58,9 +58,9 @@ services:
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://tempo:4318
       - OTEL_EXPORTER_OTLP_PROTOCOL=http/protobuf
       - OTEL_EXPORTER_OTLP_INSECURE=true
-      - OTEL_GO_AUTO_TARGET_EXE=${APPLICATION_BINARY:-test-application}
+      - OTEL_GO_AUTO_TARGET_EXE=${APPLICATION_BINARY:-${PWD}/test-application}
       - OTEL_SERVICE_NAME=${APPLICATION_BINARY:-test-application}
       - OTEL_PROPAGATORS=tracecontext,baggage
     volumes:
-      - ./:/app
+      - ${PWD}:${PWD}
       - /proc:/host/proc
