@@ -1,0 +1,4 @@
+# OpenTelemetry Python dependencies for auto-instrumentation
+opentelemetry-distro==0.47b0
+opentelemetry-exporter-otlp==1.26.0
+opentelemetry-instrumentation==0.47b0
